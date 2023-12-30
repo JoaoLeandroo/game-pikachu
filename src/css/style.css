@@ -12,23 +12,23 @@
     position: relative;
     overflow: hidden;
     background: linear-gradient(to right, rgb(3, 204, 204), rgba(0, 0, 255, 0.881));
-    border-bottom: 8px solid green;
+    border-bottom: 8px solid #0cef0c;
     border-radius: 8px;
 }
 
 .pikachu {
-    width: 100px;
+    width: 90px;
     position: absolute;
     bottom: 0;
-    left: 40px;    
+    left: 40px;  
 }
 
-.arvore {
+.pokebola {
     width: 50px;
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     right: -150px;
-    animation: animation-tronco 2s infinite linear;
+    animation: animation-tronco 1.5s infinite linear;
 }
 
 .pulo-pikachu {
@@ -49,13 +49,13 @@
         bottom: 0;
     }
     40% {
-        bottom: 120px;
+        bottom: 160px;
     }
     50% {
-        bottom: 120px;
+        bottom: 160px;
     }
     60% {
-        bottom: 120px;
+        bottom: 160px;
     }
     100% {
         bottom: 0;
