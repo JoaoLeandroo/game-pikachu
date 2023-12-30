@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-game {
+    max-width: 1300px;    
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(3, 204, 204), rgba(0, 0, 255, 0.881));
+    border-bottom: 8px solid green;
+    border-radius: 8px;
+}
+
+.pikachu {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 40px;    
+}
+
+.arvore {
+    width: 50px;
+    position: absolute;
+    bottom: -5px;
+    right: -150px;
+    animation: animation-tronco 2s infinite linear;
+}
+
+.pulo-pikachu {
+    animation: pikachu-pulo 500ms linear;
+}
+
+@keyframes animation-tronco {
+    from {
+        right: -150px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pikachu-pulo {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 120px;
+    }
+    50% {
+        bottom: 120px;
+    }
+    60% {
+        bottom: 120px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.sol {
+    width: 150px;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+.nuvem {
+    width: 135px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    animation: nuvem-animation 20s infinite linear;
+}
+
+@keyframes nuvem-animation {
+    from {
+        right: -110px;
+    }
+    to {
+        right: 100%;
+    }
+}
