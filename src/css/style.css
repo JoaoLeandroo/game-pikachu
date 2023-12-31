@@ -19,6 +19,7 @@
     border-radius: 8px;
 }
 
+
 .pikachu {
     width: 90px;
     position: absolute;
@@ -31,14 +32,14 @@
     position: absolute;
     bottom: 0;
     right: -150px;
-    animation: animation-tronco 1.5s infinite linear;
+    animation: animation-pokebola 1.5s infinite linear;
 }
 
 .pulo-pikachu {
     animation: pikachu-pulo 500ms linear;
 }
 
-@keyframes animation-tronco {
+@keyframes animation-pokebola {
     from {
         right: -150px;
     }
@@ -52,13 +53,13 @@
         bottom: 0;
     }
     40% {
-        bottom: 160px;
+        bottom: 140px;
     }
     50% {
-        bottom: 160px;
+        bottom: 140px;
     }
     60% {
-        bottom: 160px;
+        bottom: 140px;
     }
     100% {
         bottom: 0;
@@ -92,24 +93,53 @@
 .points {
     position: absolute;
     top: 20px;
-    left: 150px;
+    left: 300px;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-    color: yellow;
+    color: #ffff00;
+    border-bottom: 1px solid #000000;
 }
 
 
 .reset-game {
-    width: 100px;
+    width: 40px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 50%;
+    background-color: #fff;
     border: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    font-size: 20px;
     display: none;
+    animation: button-animation 2s infinite linear;
+}
+
+.reset-game img {
+    width: 30px;
+    position: relative;
+    top: 3px;
+}
+
+@keyframes button-animation {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.2);
+        box-shadow: 3px 3px 3px #000000;
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 3px 3px 3px #000000;
+    }
+    60% {
+        transform: scale(1.2);
+        box-shadow: 3px 3px 3px #000000;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
