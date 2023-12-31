@@ -7,11 +7,19 @@
     font-family: 'DotGothic16', sans-serif;
 }
 
+body {
+    background-color: #000000;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .section-game {
     max-width: 1300px;    
     width: 100%;
     height: 500px;
-    margin: 0 auto;
     position: relative;
     overflow: hidden;
     background: linear-gradient(to right, rgb(3, 204, 204), rgba(0, 0, 255, 0.881));
@@ -70,7 +78,7 @@
     width: 150px;
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 40px;
 }
 
 .nuvem {
@@ -93,7 +101,7 @@
 .points {
     position: absolute;
     top: 20px;
-    left: 300px;
+    left: 40px;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
